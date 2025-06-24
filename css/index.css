@@ -1,0 +1,76 @@
+:root {
+    --primary: #e17878;
+    --secondary: #9eb371;
+    --gray: #767771;
+    --light-gray: #e0d9d2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 150px;
+    height: 80px;
+}
+
+.bar {
+    font-size: 27px;
+    color: var(--primary);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 20px 0;
+    font-weight: 500;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: var(--gray);
+}
+
+.sidenav .closeBtn {
+    top: 24px;
+    right: 23px;
+    font-size: 35px;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+/* .overlay {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .6);
+}
+.background-form {
+    height: 633px;
+} */
